@@ -20,6 +20,12 @@ header {
 	flex: none;
 }
 
+video{
+	margin-left: auto;
+    margin-right: auto;
+    display: block
+}
+
 header img {
 	overflow: auto;
 	display: block;
