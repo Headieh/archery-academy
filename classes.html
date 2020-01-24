@@ -13,73 +13,98 @@
          -->
    </head>
    <body>
+      <a href="#main-content" class="sr-only">Skip to main content</a>
       <header>
          <img src="content/archeryAcademy-logo-white.png" alt='Archery Academy logo'>
          <h1>Straight to the Point Archery</h1>
-         <aside>528 Nock Point Ln <br>
-            Tacoma, WA 98412 <br> archery-education@example.com <br> (253)555-1010
+         <aside>
+            <span class='sr-only'>Contact Information:</span>
+            <span class='sr-only'>Address:</span>528 Nock Point Ln <br>
+            Tacoma, WA 98412 <br>
+            <span class='sr-only'>Email:</span> archery-education@example.com <br>
+            <span class='sr-only'>Phone Number:</span> (253)555-1010
          </aside>
       </header>
       <nav>
-         <div class="dropdown">
-            <button class="dropbtn">Services</button>
-            <div class="dropdown-content">
-               <a href="classes.html">Classes</a>
-               <a href="#">Parties</a>
-               <a href="#">Tournaments</a>
-               <a href="#">Group Activities</a>
-            </div>
-         </div>
-         |
-         <a href="instructors.html">Instructors</a> |
-         <a href="index.html">About Us</a>
+         <ul class="menu">
+            <li class="menu__item">
+               <a href="instructors.html" class="menu__link">Instructors</a>
+            </li>
+            <li class="menu__item">
+               <a role="menu" aria-expanded="true" aria-haspopup="true" class="menu__link">Services</a> 
+               <ul class="submenu">
+                  <li class="submenu__item">
+                     <a class="submenu__link" href="classes.html">Classes</a>
+                  </li>
+                  <li class="submenu__item">
+                     <a class="submenu__link" href="#">Parties</a>
+                  </li>
+                  <li class="submenu__item">
+                     <a class="submenu__link" href="#">Tournaments</a>
+                  </li>
+                  <li class="submenu__item">
+                     <a class="submenu__link" href="#">Group Activities</a>
+                  </li>
+               </ul>
+            </li>
+            <li class="menu__item">
+               <a href="index.html" class="menu__link">About Us</a>
+            </li>
+         </ul>
       </nav>
-      <h5>March 2019 <br> Group Classes:</h5>
-      <p> Cost: $120 per month
-         Equipment will be provided with exception of safety kit.
-         Once set up with proper fitting equipment, each archer will be given the basic safety instruction to start and will be introduced to various shooting techniques.
-         <a href="" title="Enrollment" data-toggle="modal" data-target="#enroll">CONTACT US TO ENROLL!</a> 
-      </p>
-      <div class="modal fade" id="enroll" role="dialog">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><i class="far fa-window-close"></i></button>
-                  <h4 class="modal-title">Contact</h4>
-               </div>
-               <div class="modal-body">
-                  <p>
-                     528 Nock Point Ln <br>
-                     Tacoma, WA 98412 <br> archery-education@example.com <br> (253)555-1010
-                  </p>
+      <section id="main-content">
+         <h5>March 2019 <br> Group Classes:</h5>
+         <p> Cost: $120 per month
+            Equipment will be provided with exception of safety kit.
+            Once set up with proper fitting equipment, each archer will be given the basic safety instruction to start and will be introduced to various shooting techniques.
+            <a aria-haspopup="true" aria-expanded='false' href="" title="Enrollment" data-toggle="modal" data-target="#enroll">CONTACT US TO ENROLL!</a> 
+         </p>
+         <div class="modal fade" id="enroll" role="dialog">
+            <div class="modal-dialog" aria-describedby='modalDescription'>
+               <div aria-modal="true" class="modal-content" role='dialog'>
+                  <div class='sr-only' id='modalDescription'>
+                     This is a dialog window which overlays the main content of the page. The modal begins with a close button at the top of the modal.
+                     Pressing the Close Modal button will close the modal and bring you back to where you were on the page.
+                  </div>
+                  <div class="modal-header">
+                     <button type="button" class="close" data-dismiss="modal"><i class="far fa-window-close"></i></button>
+                     <h4 class="modal-title">Contact</h4>
+                  </div>
+                  <div class="modal-body">
+                     <p>
+                        528 Nock Point Ln <br>
+                        Tacoma, WA 98412 <br> archery-education@example.com <br> (253)555-1010
+                     </p>
+                  </div>
                </div>
             </div>
          </div>
-      </div>
-      <div class="row">
-         <div class="col-6">
-            A101 Basic Archery<br>
-            Instructor: <a href="instructors.html">Derek Jenkins</a><br>
-            Schedule: Mondays and Wednesdays, 4-5pm<br>
-            Prerequisite: Interest in learning about the sport of archery. Minimum age 8 years old or 7 w/ pre-evaluation.
+         <div class="row">
+            <div class="col-6">
+               A101 Basic Archery<br>
+               Instructor:<span class='sr-only'>This link will open in a new tab </span>  <a href="instructors.html" target=_blank>Derek Jenkins</a><br>
+               Schedule: Mondays and Wednesdays, 4-5pm<br>
+               Prerequisite: Interest in learning about the sport of archery. Minimum age 8 years old or 7 w/ pre-evaluation.
+            </div>
          </div>
-      </div>
-      <div class="row">
-         <div class="col-6">
-            A102 Intermediate Archery <br>
-            Instructor: <a href="instructors.html">Derek Jenkins</a><br>
-            Schedule: Tuesdays and Thursdays, 4-5pm<br>
-            Prerequisite:A101 or recommendation from private lesson instructor. Minimum age 7 years old.
+         <div class="row">
+            <div class="col-6">
+               A102 Intermediate Archery <br>
+               Instructor: <span class='sr-only'>This link will open in a new tab </span> <a href="instructors.html" target=_blank>Derek Jenkins</a><br>
+               Schedule: Tuesdays and Thursdays, 4-5pm<br>
+               Prerequisite:A101 or recommendation from private lesson instructor. Minimum age 7 years old.
+            </div>
          </div>
-      </div>
-      <div class="row">
-         <div class="col-6">
-            A103 Advanced Archery<br>
-            Instructor: <a href="instructors.html">Derek Jenkins</a><br>
-            Schedule: Tuesdays and Thursdays, 5-6pm<br>
-            Prerequisite: A102 or equivalent. Minimum age 7 years old.
+         <div class="row">
+            <div class="col-6">
+               A103 Advanced Archery<br>
+               Instructor: <span class='sr-only'>This link will open in a new tab </span> <a href="instructors.html" target=_blank>Derek Jenkins</a><br>
+               Schedule: Tuesdays and Thursdays, 5-6pm<br>
+               Prerequisite: A102 or equivalent. Minimum age 7 years old.
+            </div>
          </div>
-      </div>
+      </section>
+      <a href="#main-content" class="sr-only">Return to top of main content</a>
       <footer>
          <p>Nondiscriminatory Policy:</p>
          <p>Next Step Archery admits students of any race, gender presentation, sexuality, religion, national origin or ethnic origin to all rights, privileges, programs and activities available to students at the school. We do not discriminate in administration of our educational policies, admission policies and other school administered programs. All students are welcome and valuable members of our community.
