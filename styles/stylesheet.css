@@ -58,7 +58,11 @@ img {
 }
 
 .col-6::first-line {
-	color: #1B5D88
+	color: #1B5D88;
+	font-weight: bolder;
+	text-decoration: underline;
+	text-decoration-style: wavy;
+	
 }
 
 h1 {
