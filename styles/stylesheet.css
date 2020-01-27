@@ -62,7 +62,6 @@ img {
 	font-weight: bolder;
 	text-decoration: underline;
 	text-decoration-style: wavy;
-	
 }
 
 h1 {
@@ -145,13 +144,16 @@ h5 {
 	position: relative;
 	display: block
 }
+
 a {
 	color: #444;
 	padding: 3rem;
 	margin: 1rem;
 	text-decoration: underline
 }
-a:hover,a:focus {
+
+a:hover,
+a:focus {
 	color: #444;
 	padding: 3rem;
 	margin: 1rem;
@@ -170,8 +172,6 @@ nav a {
 	margin: 1rem;
 	text-decoration: underline
 }
-
-
 
 
 /*
